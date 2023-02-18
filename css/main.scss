@@ -67,11 +67,21 @@ body {
 .card__button {
     padding: 1rem 2rem;
     border-radius: 3rem;
-    border:none;
+    border:1px solid transparent;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 1rem;
+    cursor: pointer;
+
+    &:active, &:hover {
+        background: transparent;
+        border: 1px solid $TransparentWhite;
+        color: $TransparentWhite;
+    }
 
     @media (min-width: 40em) {
         margin-top: 3rem;
     }
+
+    
+    
 }
