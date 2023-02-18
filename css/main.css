@@ -1,0 +1,62 @@
+.card__container {
+  display: grid;
+  place-content: center;
+  grid-template: 1fr 1fr 1fr/1fr;
+  border-radius: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  max-width: 65em;
+  min-width: 375px;
+}
+@media (min-width: 40em) {
+  .card__container {
+    grid-template: 1fr/1fr 1fr 1fr;
+  }
+}
+
+.card {
+  padding: 3rem 3.5rem;
+}
+.card h2 {
+  color: hsl(0deg, 0%, 95%);
+  font-size: 3rem;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+.card p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 2rem;
+}
+
+.sedan {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.sedan .card__button {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.suv .card__button {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.luxury .card__button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+.card__button {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+}
+@media (min-width: 40em) {
+  .card__button {
+    margin-top: 3rem;
+  }
+}

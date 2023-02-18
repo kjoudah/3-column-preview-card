@@ -1,0 +1,72 @@
+@import 'reset.scss';
+@import 'colors.scss';
+
+
+
+.card__container {
+    display: grid;
+    place-content: center;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    border-radius: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    max-width: 65em;
+    min-width: 375px;
+
+
+    @media (min-width: 40em) {
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
+}
+
+.card {
+    padding: 3rem 3.5rem;
+
+    h2 {
+        color: $VeryLightGray;
+        font-size: 3rem;
+        font-family: 'Big Shoulders Display', cursive;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $TransparentWhite;
+        line-height: 2rem;
+    }
+
+}
+
+.sedan {
+    background-color: $BrightOrange;
+
+    .card__button {
+        color: $BrightOrange;
+    }
+}
+
+.suv {
+    background-color: $DarkCyan;
+    
+    .card__button {
+        color: $DarkCyan;
+    }
+}
+
+.luxury {
+    background-color: $VeryDarkCyan;
+
+    .card__button {
+        color: $VeryDarkCyan;
+    }
+}
+
+.card__button {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border:none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+
+    @media (min-width: 40em) {
+        margin-top: 3rem;
+    }
+}
