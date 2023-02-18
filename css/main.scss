@@ -2,6 +2,11 @@
 @import 'colors.scss';
 
 
+body {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
 
 .card__container {
     display: grid;
